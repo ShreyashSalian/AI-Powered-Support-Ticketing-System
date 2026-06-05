@@ -259,7 +259,7 @@ docker run -d -p 6379:6379 --name redis redis
 
 ---
 
-## API Endpoints
+<!-- ## API Endpoints
 
 ### Authentication
 
@@ -358,7 +358,7 @@ Generate Coverage Report
 npm run test:coverage
 ```
 
----
+--- -->
 
 <!-- ## Future Enhancements
 
