@@ -3,7 +3,6 @@ import jwt from "jsonwebtoken";
 import mongoose, { Types, Document, Schema } from "mongoose";
 
 enum USER_ROLE {
-  USER = "USER",
   AGENT = "AGENT",
   CUSTOMER = "CUSTOMER",
   ADMIN = "ADMIN",
@@ -72,7 +71,7 @@ const userSchema = new Schema<userDocument>(
     role: {
       type: String,
       enum: Object.values(USER_ROLE),
-      default: USER_ROLE.USER,
+      default: USER_ROLE.CUSTOMER,
     },
     permission: {
       type: [String],

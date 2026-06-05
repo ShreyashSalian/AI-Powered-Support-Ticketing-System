@@ -4,7 +4,9 @@
   "description": "AI-Powered Support Ticketing System is a scalable backend application built using Node.js, TypeScript, MongoDB, Redis, BullMQ, and OpenAI. The system helps organizations manage customer support requests efficiently while leveraging Artificial Intelligence to automate ticket categorization, sentiment analysis, ticket summarization, and response suggestions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
